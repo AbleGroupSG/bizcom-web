@@ -1,0 +1,64 @@
+---
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Services',
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Our Testimonials"
+    testimonials={[
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: 'Ms Koh Mei Yen',
+        job: 'Manager Poh Sien Pte Ltd',
+        image: {
+          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
+          alt: 'Testimoni 1',
+        },
+      },
+      {
+        testimonial: `We are thankful for the numerous value added services provided by BizCom at highly affordable fees apart from their core professional services.`,
+        name: 'Mr Chris Chin',
+        job: 'Director Khieven Pte Ltd',
+        image: {
+          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
+          alt: 'Testimoni 1',
+        },
+      },
+      {
+        testimonial: `For 3 consecutive years we have been engaging, BizCom for compilation of financial statements and tax filing, appreciate the team timely delivery of services.`,
+        name: 'Ms Priscilla',
+        job: 'Accounts Executive G.O. Construction Pte Ltd',
+        image: {
+          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
+          alt: 'Testimoni 1',
+        },
+      },
+      {
+        testimonial: `Thank you for your excellent service and patience in clarifying our questions.`,
+        name: 'Phang Tze Qing',
+        job: 'Sales Manager, Paragon Trading & Distribution',
+        image: {
+          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
+          alt: 'Testimoni 1',
+        },
+      },
+      {
+        testimonial: `We are lucky to have BizCom to assist in our business expansion to establish a new setup in Singapore, thanks!.`,
+        name: 'Mr Eugene L.K.K',
+        job: 'Director Pandan GoldCoast Travel & Tours Sdn Bhd, Malaysia',
+        image: {
+          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
+          alt: 'Testimoni 1',
+        },
+      },
+    ]}
+  />
+</Layout>
