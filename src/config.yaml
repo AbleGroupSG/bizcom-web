@@ -1,5 +1,5 @@
 site:
-  name: BizCom Management Services
+  name: BizCom Management Services PTE. LTD.
   site: 'https://BizCom.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,9 +9,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: BizCom
+    default: BizCom Management Services PTE. LTD.
     template: '%s — BizCom'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Bizcom is a boutique accounting firm with a proven track record providing specialist support for tax, accounting and business advisory services to Singapore & Malaysia companies. Get in touch with us for your accounting needs. We would love to hear from you!"
   robots:
     index: true
     follow: true

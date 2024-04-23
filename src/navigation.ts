@@ -1,25 +1,20 @@
 import { getPermalink, getBlogPermalink } from './utils/permalinks';
-import services from './data/services';
-import knowledge from './data/knowledge';
-import { getLangFromUrl, useTranslations } from './utils/utils';
+import services from './data/services.ts';
 
-const lang = getLangFromUrl(new URL('https://example.com/en/page'));
 
-const t = useTranslations(lang);
 
-// Header data
 export const headerData = {
   links: [
-    { text: t('home'), href: getPermalink('/') },
-    { text: t('about'), links: services },
-    { text: t('knowledgebase'), links: knowledge },
-    { text: t('testimonials'), href: getPermalink('/testimonial') },
-    { text: t('blog'), href: getBlogPermalink() }
+    { text: 'home', href: getPermalink('/') },
+    { text: 'about', href: getPermalink('/about') },
+    { text: 'services', href: '#services', links: services },
+    { text: 'testimonials', href: '#testimonials' },
+    { text: 'faq', href: getPermalink('/faq') },
+    { text: 'blog', href: getBlogPermalink() }
   ],
-  actions: [{ text: t('contact'), href: getPermalink('/contact'), target: '' }],
+  actions: [{ text: 'contact', href: '#contact-us', target: '' }],
 };
 
-// Footer data
 export const footerData = {
   links: [
     {

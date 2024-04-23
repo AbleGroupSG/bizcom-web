@@ -1,5 +1,4 @@
 import { I18N } from 'astrowind:config';
-import { ui, defaultLang } from '~/i18n/ui';
 
 export const formatter: Intl.DateTimeFormat = new Intl.DateTimeFormat(I18N?.language, {
   year: 'numeric',
@@ -7,18 +6,6 @@ export const formatter: Intl.DateTimeFormat = new Intl.DateTimeFormat(I18N?.lang
   day: 'numeric',
   timeZone: 'UTC',
 });
-
-export function getLangFromUrl(url: URL) {
-  const [, lang] = url.pathname.split('/');
-  if (lang in ui) return lang as keyof typeof ui;
-  return defaultLang;
-}
-
-export function useTranslations(lang: keyof typeof ui) {
-  return function t(key: keyof typeof ui[typeof defaultLang]) {
-    return ui[lang][key] || ui[defaultLang][key];
-  }
-}
 
 export const getFormattedDate = (date: Date): string => (date ? formatter.format(date) : '');
 

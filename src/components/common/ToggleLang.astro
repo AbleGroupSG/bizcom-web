@@ -1,0 +1,54 @@
+---
+
+---
+
+<div class="dropdown">
+    <a
+        class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center"
+    >
+        <img
+            id="icon-lang"
+            alt="Language"
+            loading="lazy"
+            width="50"
+            height="50"
+            decoding="async"
+            data-nimg="1"
+            class="rounded-full overflow-hidden object-cover w-5 h-5"
+            src="https://region-api.pages.dev/flags/svg/GB.svg"
+        />
+    </a>
+    <ul
+        class="dropdown-menu md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl"
+    >
+        <li>
+            <a
+                href="#!"
+                class:list={[
+                    "first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap",
+                ]}
+                onclick="loadLanguage('en')"
+            >
+                English
+            </a>
+            <a
+                href="#!"
+                class:list={[
+                    "first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap",
+                ]}
+                onclick="loadLanguage('id')"
+            >
+                Indonesia
+            </a>
+            <a
+                href="#!"
+                class:list={[
+                    "first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap",
+                ]}
+                onclick="loadLanguage('zh')"
+            >
+                Chinese
+            </a>
+        </li>
+    </ul>
+</div>

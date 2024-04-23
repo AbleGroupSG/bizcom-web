@@ -11,6 +11,7 @@ import icon from 'astro-icon';
 import compress from 'astro-compress';
 
 import astrowind from './src/integration';
+import react from '@astrojs/react';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehypePlugin } from './src/utils/frontmatter.mjs';
 
@@ -26,8 +27,8 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
-
   integrations: [
+    react(),
     tailwind({
       applyBaseStyles: false,
     }),
@@ -87,5 +88,15 @@ export default defineConfig({
         '~': path.resolve(__dirname, './src'),
       },
     },
+  },
+
+  buildOptions: {
+    // Include TypeScript files in the build pipeline
+    srcIncludes: ["src/**/*.astro", "src/**/*.ts"],
+  },
+
+  devOptions: {
+    // Enable JavaScript execution during development
+    jsCompiler: true,
   },
 });

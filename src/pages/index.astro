@@ -1,130 +1,154 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from "~/layouts/PageLayout.astro";
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-
+import Hero from "~/components/widgets/Hero.astro";
+import Features from "~/components/widgets/Features.astro";
+import Testimonials from "~/components/widgets/Testimonials.astro";
+import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
+import ContactUs from "~/components/widgets/Contact.astro";
 
 const metadata = {
-  title: 'BizCom Management Services',
+  title: "BizCom Management Services",
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
-  <Hero image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }} />
-
-  <BlogLatestPosts
-    title="Accounting Services Singapore"
-    information={`BizCom Management Services Pte Ltd consists of a team of dedicated and dynamic certified accountants, accredited tax professionals, and business partners, each contributing their optimum expertise to deliver through providing core and value-added services to small & medium enterprises and new start-ups in Singapore.`}
+  <Hero
+    tagline="Accounting Services Singapore"
+    title="BizCom Management"
+    subtitle="BizCom Management Services Pte Ltd consists of a team of dedicated and dynamic certified accountants"
+    videoSrc="/bg2.mp4"
+    content='<p class="text-white">BizCom offers a variety of quality and affordable services for small to medium businesses in Singapore</p>'
   />
 
-  <Features3
+  <Features
+    id="about"
+    tagline="About Us"
     title="Why choose BizCom?"
-    subtitle="BizCom offers a variety of quality and affordable services for small to medium businesses in Singapore. Browse our offering of services targeted at enhancing business functions and streamlining internal business processes so you can spend time focusing on what matters most growing your business. Our core competencies as Accounting Firm Singapore and Company Secretary Singapore are our knowledge and expertise in company incorporation Singapore, company tax Singapore, accounting and compilation of financial statements. We have helped numerous clients to register company in Singapore and follow up to ensure statutory compliance with affordable service packages."
-    columns={3}
-    isBeforeContent={true}
-    items={[]}
-  />
-
-  <!-- Features3 Widget ************** -->
-
-
-  <Testimonials
-    title="Our Testimonials"
-    testimonials={[
+    subtitle="BizCom offers a variety of quality and affordable services for small to medium businesses in Singapore. Browse our offering of services targeted at enhancing business functions and streamlining internal business processes so you can spend time focusing on what matters most: growing your business."
+    items={[
       {
-        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
-        name: 'Ms Koh Mei Yen',
-        job: 'Manager Poh Sien Pte Ltd',
-        image: {
-          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
-          alt: 'Testimoni 1',
-        },
+        title: "Business Acumen & Association",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        icon: "tabler:components",
       },
       {
-        testimonial: `We are thankful for the numerous value added services provided by BizCom at highly affordable fees apart from their core professional services.`,
-        name: 'Mr Chris Chin',
-        job: 'Director Khieven Pte Ltd',
-        image: {
-          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
-          alt: 'Testimoni 1',
-        },
+        title: "Cost Efficiency",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        icon: "tabler:components",
       },
       {
-        testimonial: `For 3 consecutive years we have been engaging, BizCom for compilation of financial statements and tax filing, appreciate the team timely delivery of services.`,
-        name: 'Ms Priscilla',
-        job: 'Accounts Executive G.O. Construction Pte Ltd',
-        image: {
-          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
-          alt: 'Testimoni 1',
-        },
+        title: "Industry Expertise",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        icon: "tabler:components",
       },
       {
-        testimonial: `Thank you for your excellent service and patience in clarifying our questions.`,
-        name: 'Phang Tze Qing',
-        job: 'Sales Manager, Paragon Trading & Distribution',
-        image: {
-          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
-          alt: 'Testimoni 1',
-        },
-      },
-      {
-        testimonial: `We are lucky to have BizCom to assist in our business expansion to establish a new setup in Singapore, thanks!.`,
-        name: 'Mr Eugene L.K.K',
-        job: 'Director Pandan GoldCoast Travel & Tours Sdn Bhd, Malaysia',
-        image: {
-          src: 'https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png',
-          alt: 'Testimoni 1',
-        },
+        title: "Professional Advice & Practices",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        icon: "tabler:components",
       },
     ]}
   />
 
-   <ContactUs
-     title="Drop us a message today!"
-     subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-     inputs={[
-       {
-         type: 'text',
-         name: 'name',
-         label: 'Name',
-       },
-       {
-         type: 'email',
-         name: 'email',
-         label: 'Email',
-       },
-       {
-         type: 'phone',
-         name: 'phone',
-         label: 'Phone Number',
-       },
-     ]}
-     textarea={{
-       label: 'Message',
-     }}
-     disclaimer={{
-       label:
-         'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-     }}
-     description="Our support team typically responds within 24 business hours."
-   />
- 
-   <!-- Features2 Widget ************** -->
+  <BlogLatestPosts
+    id="services"
+    title="Accounting Services Singapore"
+    information={"BizCom Management Services Pte Ltd consists of a team of dedicated and dynamic certified accountants, accredited tax professionals, and business partners, each contributing their optimum expertise to deliver through providing core and value-added services to small & medium enterprises and new start-ups in Singapore."}
+  />
 
+  <Testimonials
+    id="testimonials"
+    title="Our Testimonials"
+    testimonials={[
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `We are thankful for the numerous value added services provided by BizCom at highly affordable fees apart from their core professional services.`,
+        name: "Mr Chris Chin",
+        job: "Director Khieven Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `For 3 consecutive years we have been engaging, BizCom for compilation of financial statements and tax filing, appreciate the team timely delivery of services.`,
+        name: "Ms Priscilla",
+        job: "Accounts Executive G.O. Construction Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Thank you for your excellent service and patience in clarifying our questions.`,
+        name: "Phang Tze Qing",
+        job: "Sales Manager, Paragon Trading & Distribution",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `We are lucky to have BizCom to assist in our business expansion to establish a new setup in Singapore, thanks!.`,
+        name: "Mr Eugene L.K.K",
+        job: "Director Pandan GoldCoast Travel & Tours Sdn Bhd, Malaysia",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+    ]}
+    callToAction={{
+      target: "",
+      text: "Read more testimonials",
+      href: "/testimonials",
+      icon: "tabler:chevron-right",
+    }}
+  />
 
+  <ContactUs
+    id="contact-us"
+    title="Drop us a message today!"
+    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking for right there! If not, our support team is delighted to help you."
+    inputs={[
+      {
+        type: "text",
+        name: "name",
+        label: "Name",
+      },
+      {
+        type: "email",
+        name: "email",
+        label: "Email",
+      },
+      {
+        type: "phone",
+        name: "phone",
+        label: "Phone Number",
+      },
+    ]}
+    textarea={{
+      label: "Message",
+    }}
+    disclaimer={{
+      label:
+        "By submitting this contact form, you acknowledge and agree to the collection of your personal information.",
+    }}
+    description="Our support team typically responds within 24 business hours."
+  />
+
+  <!-- Features2 Widget ************** -->
 </Layout>
