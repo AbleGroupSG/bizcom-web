@@ -1,8 +1,9 @@
 ---
-isBlog: false
+isBlog: true
 publishDate: 2024-04-14T00:00:00Z
 title: Company Common Seal
 excerpt: The common seal creates an embossing effect when pressure is applied. The seal is usually required for legal documents, share certificates, deeds and major contracts.
+image: https://files.oaiusercontent.com/file-o4z4H8a72bhBO6i3rBT82uho?se=2024-04-23T17%3A35%3A03Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dc111a3d1-cbed-47bb-a99a-1f046f34f89b.webp&sig=GNfa407nN2iVJ5WnlKHR/jiLI1/o6xy6ReK6fvt91sQ%3D
 ---
 
 The common seal creates an embossing effect when pressure is applied. The seal is usually required for legal documents, share certificates, deeds and major contracts.

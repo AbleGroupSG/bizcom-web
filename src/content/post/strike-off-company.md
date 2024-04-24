@@ -1,8 +1,9 @@
 ---
-isBlog: false
+isBlog: true
 publishDate: 2024-04-14T00:00:00Z
-title: Strike Off Company Singapore
+title: Strike Off Company
 excerpt: A company may apply to the Accounting and Corporate Regulatory Authority (ACRA) to strike its name offÂ the Register pursuant to Section 344 of the Companies Act.
+image: https://files.oaiusercontent.com/file-Imgei4GG5Jt5iyTw5hnEyyHL?se=2024-04-23T17%3A46%3A05Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D5f7188b7-dccd-4352-86ae-5d3b2828991c.webp&sig=BGKmUxa/OUgDdoLMZx9u2Yk0gNV1x0YOZQTe69zxWA0%3D
 ---
 
 Strike Off Company Singapore

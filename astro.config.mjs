@@ -92,7 +92,8 @@ export default defineConfig({
 
   buildOptions: {
     // Include TypeScript files in the build pipeline
-    srcIncludes: ["src/**/*.astro", "src/**/*.ts"],
+    srcIncludes: ["src/**/*.astro", "src/**/*.ts/*.js"],
+    outDir: './dist',
   },
 
   devOptions: {

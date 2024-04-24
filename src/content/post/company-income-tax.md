@@ -1,8 +1,9 @@
 ---
-isBlog: false
+isBlog: true
 publishDate: 2024-04-14T00:00:00Z
 title: Company Income Tax Singapore
 excerpt: Every business decision entails a tax implication. As such, obtaining effective and accurate tax advice is crucial to your business operations. Given the ever-increasing complexity of tax regulations, finding the right tax consultant to guide you through is vital to any successful business.
+image: https://files.oaiusercontent.com/file-Dz8hAGGALsjARyW8MZNdnyKd?se=2024-04-23T17%3A36%3A07Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D39bf46d0-789c-43e3-b9c3-16c726d65865.webp&sig=vJtDO034bh0GlHDTc1HQOxn5URSX7Je0omMD8oRGbTU%3D
 ---
 
 Every business decision entails a tax implication. As such, obtaining effective and accurate tax advice is crucial to your business operations. Given the ever-increasing complexity of tax regulations, finding the right tax consultant to guide you through is vital to any successful business.

@@ -38,6 +38,7 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
           {
             secondaryLinks.map(({ text, href }) => (
               <a
+                data-i18n={text}
                 class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out mr-2 rtl:mr-0 rtl:ml-2"
                 href={href}
                 set:html={text}
@@ -55,6 +56,7 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
                 {links.map(({ text, href, ariaLabel }) => (
                   <li class="mb-2">
                     <a
+                    data-i18n={text}
                       class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
                       href={href}
                       aria-label={ariaLabel}

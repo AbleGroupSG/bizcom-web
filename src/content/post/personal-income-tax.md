@@ -1,8 +1,9 @@
 ---
-isBlog: false
+isBlog: true
 publishDate: 2024-04-14T00:00:00Z
-title: Personal Income Tax Singapore
+title: Personal Income Tax
 excerpt: Singapore’s Personal Income Tax structure is one of the friendliest and most competitive in the world. The tax year is from 1st January to 31 December in each calendar year and income is assessed on a preceding year basis.
+image: https://files.oaiusercontent.com/file-XPgBbGyu4Hpdv6S1FoS9lOdU?se=2024-04-23T17%3A45%3A23Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D490b73e2-f565-4ba2-b50c-561ba1e8449c.webp&sig=BLTHCSPCa9VyqqJles5DpYP2ySdTZSYssndelG925Ew%3D
 ---
 
 Singapore’s Personal Income Tax structure is one of the friendliest and most competitive in the world. The tax year is from 1st January to 31 December in each calendar year and income is assessed on a preceding year basis.

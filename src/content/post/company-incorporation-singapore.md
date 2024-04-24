@@ -1,8 +1,9 @@
 ---
-isBlog: false
+isBlog: true
 publishDate: 2024-04-14T00:00:00Z
 title: Company Incorporation Singapore
 excerpt: Singapore has always enjoyed a great reputation as an ideal venue for Business Incorporation due to the following.
+image : https://files.oaiusercontent.com/file-KZDeslwnwd7vRdb8RR5mMxoL?se=2024-04-23T17%3A39%3A00Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D119c849c-7f7f-4bbe-a9b8-178225bddb89.webp&sig=Qewn2Swh7meb3hCFokMvchfanspzYH9uptnvnKX4EVw%3D
 ---
 
 Company Incorporation Singapore

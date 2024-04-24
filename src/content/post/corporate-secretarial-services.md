@@ -1,8 +1,9 @@
 ---
-isBlog: false
-publishDate: 2024-04-14T00:00:00Z
-title: Corporate Secretarial Services Singapore
+isBlog: true
+publishDate: 2024-04-15T00:00:00Z
+title: Corporate Secretarial Services
 excerpt: Every company must have at least one secretary appointed within 6 months from the date of incorporation. However, a Singapore private company, other than that required under the Companies Act, need not appoint a professionally qualified company secretary.
+image: https://files.oaiusercontent.com/file-unmG6H8l95ihGXSwUzBRTWEu?se=2024-04-23T17%3A40%3A39Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dbf74373e-d9b5-4319-8b26-f860ae73d7e0.webp&sig=njTsT7tFb5S/g%2BXkgyvumgguQ6Ds7%2BUE5UdYCXiT0GY%3D
 ---
 
 Corporate Secretarial Services Singapore

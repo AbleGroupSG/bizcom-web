@@ -1,8 +1,9 @@
 ---
-isBlog: false
-publishDate: 2024-04-14T00:00:00Z
-title: Compilation Services Singapore
+isBlog: true
+publishDate: 2024-04-11T00:00:00Z
+title: Compilation Services
 excerpt: Your company may be exempted from audit if it is a Private Exempt Company (“EPC”). EPC means that no corporate shareholder in the company and the number of shareholders in the company is not more than 20. In addition.
+image: https://files.oaiusercontent.com/file-m9XpwroWPJfbWAcxZ4nCbYit?se=2024-04-23T17%3A39%3A56Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D098886d0-57a2-4f04-b4fa-c625171bc3f4.webp&sig=xsYIQ3KTl2ZAS%2BpDxEO6insYT0uB6PrnnCOf2dA8M80%3D
 ---
 
 Compilation Services Singapore

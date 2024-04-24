@@ -1,8 +1,9 @@
 ---
-isBlog: false
+isBlog: true
 publishDate: 2024-04-14T00:00:00Z
 title: Goods & Service Tax Singapore
 excerpt: The Singapore Goods and Services Tax (GST) is a tax charged on the supply of goods and services made in Singapore and on the importation of goods into Singapore. The current rate for GST is 7%.
+image: https://files.oaiusercontent.com/file-4JRTJauVrVxN11UDHsZLsTik?se=2024-04-23T17%3A41%3A30Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dc5f5aeb7-cbf9-4d75-be40-badd85aa4f71.webp&sig=2mgJIsDagXfBX%2BIQafoisXJHzAAfKlXytjnaO5mpHvU%3D
 ---
 
 The Singapore Goods and Services Tax (GST) is a tax charged on the supply of goods and services made in Singapore and on the importation of goods into Singapore. The current rate for GST is 7%.

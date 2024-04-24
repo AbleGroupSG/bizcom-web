@@ -1,8 +1,9 @@
 ---
-isBlog: false
+isBlog: true
 publishDate: 2024-04-14T00:00:00Z
-title: Nominee Director Services Singapore
+title: Nominee Director Services
 excerpt: Under the Singapore Companies Act, a Private Limited Company in Singapore must have at least 1 local resident director, which is made up of either.
+image: https://files.oaiusercontent.com/file-y4mB8gmy3B69XdJfFr1JUQku?se=2024-04-23T17%3A42%3A21Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D8604579d-1708-4a95-a0da-f49aba6bbede.webp&sig=J0iaRV6CvXdO7fFJskYiAffiSG455mUK9/T3PSHOkUw%3D
 ---
 
 Nominee Director Services Singapore

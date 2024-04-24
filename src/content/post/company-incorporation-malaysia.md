@@ -1,8 +1,9 @@
 ---
-isBlog: false
+isBlog: true
 publishDate: 2024-04-14T00:00:00Z
 title: Company Incorporation Malaysia
 excerpt: The Companies Act, 1965 governs all companies in Malaysia. The Act stipulates that a person must register a company with Companies Commission of Malaysia (CCM) (in Bahasa Malaysia as Suruhanjaya Syarikat Malaysia) prior to engaging in any business activities in Malaysia.
+image: https://files.oaiusercontent.com/file-u2EZp0yw8Xqs8hHl58QLTz4g?se=2024-04-23T17%3A38%3A09Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D29074b98-5cc1-4fff-a70b-1e5f73fc1a42.webp&sig=wWZZ5XPaEzsPcjbp3zge4xoget4mwSQ/OR5bg%2By3qMY%3D
 ---
 
 Company Incorporation Malaysia

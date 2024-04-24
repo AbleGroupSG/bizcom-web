@@ -24,21 +24,21 @@ export const footerData = {
     {
       title: 'Recent Posts',
       links: [
-        { text: 'Annual General Meeting Singapore Requirement', href: '#' },
-        { text: 'Valuation for Duties and GST', href: '#' },
-        { text: 'Why incorporate your company in Singapore?', href: '#' },
-        { text: 'Singapore Goods and Services Tax (GST)', href: '#' },
-        { text: 'Presentation of Profit or Loss and Other Comprehensive Income', href: '#' }
+        { text: 'Annual General Meeting Singapore Requirement', href: getPermalink('/blog') },
+        { text: 'Valuation for Duties and GST', href: getPermalink('/blog') },
+        { text: 'Why incorporate your company in Singapore?', href: getPermalink('/blog') },
+        { text: 'Singapore Goods and Services Tax (GST)', href: getPermalink('/blog') },
+        { text: 'Presentation of Profit or Loss and Other Comprehensive Income', href: getPermalink('/blog') }
       ],
     },
     {
       title: '_',
       links: [
-        { text: 'Singapore Accounting Standards', href: '#' },
-        { text: 'Singapore Company Secretary Duties', href: '#' },
-        { text: 'Consequences of Filing Taxes or Not Filing', href: '#' },
-        { text: 'What is SFRS for Small Entities', href: '#' },
-        { text: 'What to Expect During an IRAS Audit', href: '#' }
+        { text: 'Singapore Accounting Standards', href: getPermalink('/blog') },
+        { text: 'Singapore Company Secretary Duties', href: getPermalink('/blog') },
+        { text: 'Consequences of Filing Taxes or Not Filing', href: getPermalink('/blog') },
+        { text: 'What is SFRS for Small Entities', href: getPermalink('/blog') },
+        { text: 'What to Expect During an IRAS Audit', href: getPermalink('/blog') }
       ],
     },
   ],

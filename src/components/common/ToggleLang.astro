@@ -1,11 +1,25 @@
 ---
-
+const {
+    label = "Toggle between Dark and Light mode",
+    class: className = "text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center",
+    iconClass = "w-6 h-6",
+    iconName = "tabler:sun",
+} = Astro.props;
 ---
 
-<div class="dropdown">
-    <a
-        class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center"
-    >
+<select
+    id="lang"
+    onchange="loadLanguage(this.value)"
+    class="rounded-t rounded-b text-sm text-black dark:text-white py-2 px-5 block"
+    style="background-color: transparent; border: none; outline:none"
+>
+    <option value="en" style="background-color: transparent; color: black;">English</option>
+    <option value="id" style="background-color: transparent; color: black;">Indonesian</option>
+    <option value="zh" style="background-color: transparent; color: black;">中文</option>
+</select>
+
+<!-- <div class="">
+    <a class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center">
         <img
             id="icon-lang"
             alt="Language"
@@ -19,7 +33,7 @@
         />
     </a>
     <ul
-        class="dropdown-menu md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl"
+        class="md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl"
     >
         <li>
             <a
@@ -51,4 +65,4 @@
             </a>
         </li>
     </ul>
-</div>
+</div> -->
