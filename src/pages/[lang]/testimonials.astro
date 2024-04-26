@@ -1,0 +1,116 @@
+---
+import TestimonialsWidget from "~/components/widgets/Testimonials.astro";
+import Layout from "~/layouts/PageLayout.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const metadata = {
+  title: "Testimonials",
+};
+export function getStaticPaths() {
+  return [
+    { params: { lang: "en", version: "v1" } },
+    { params: { lang: "id", version: "v1" } },
+    { params: { lang: "zh", version: "v1" } },
+  ];
+}
+---
+
+<Layout metadata={metadata}>
+  <!-- Testimonials Widget *********** -->
+  <TestimonialsWidget
+    id="testimonials"
+    title={t("our.testimonials")}
+    testimonials={[
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+    ]}
+    callToAction={{
+      target: "",
+      text: t("read.more.testimonials"),
+      href: "/testimonials",
+      icon: "tabler:chevron-right",
+    }}
+  />
+</Layout>

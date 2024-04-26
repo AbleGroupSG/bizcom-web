@@ -9,26 +9,12 @@ import { UI } from "astrowind:config";
 
   window.basic_script = true;
   window.loadLanguage = async (lang) => {
-    localStorage.setItem("lang", lang);
-    const locales_src = window.location.origin+'/locales/'+lang+'.json';
-    const response = await fetch(locales_src);
-    const messages = await response.json();
-
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      el.textContent = messages[key] || key;
-    });
+    const pathSegments = window.location.pathname
+      .split("/")
+      .filter((segment) => segment);
+    const newPath = pathSegments[1] ? `/${lang}/${pathSegments[1] || ""}` : `/${lang}`;
+    window.location.href = newPath;
   };
-  function initLanguage() {
-    const lang = localStorage.getItem("lang");
-    if(lang){
-      loadLanguage(lang);
-      document.getElementById("lang").value = lang;    
-    }else{
-      document.getElementById("lang").value = "en";
-      loadLanguage('en');
-    }
-  }
   function applyTheme(theme) {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
@@ -38,7 +24,7 @@ import { UI } from "astrowind:config";
   }
 
   const initTheme = function () {
-    applyTheme
+    applyTheme;
     if (
       (defaultTheme && defaultTheme.endsWith(":only")) ||
       (!localStorage.theme && defaultTheme !== "system")
@@ -60,11 +46,11 @@ import { UI } from "astrowind:config";
     }
     document.getElementById("logo").src =
       document.documentElement.classList.contains("dark")
-        ? window.location.origin+"/white_logo.png"
-        : window.location.origin+"/logo.png";
+        ? window.location.origin + "/white_logo.png"
+        : window.location.origin + "/logo.png";
   };
   initTheme();
-  initLanguage();
+  // initLanguage();
 
   function attachEvent(selector, event, fn) {
     const matches =
@@ -118,8 +104,8 @@ import { UI } from "astrowind:config";
         : "light";
       document.getElementById("logo").src =
         document.documentElement.classList.contains("dark")
-          ? window.location.origin+"/white_logo.png"
-          : window.location.origin+"/logo.png";
+          ? window.location.origin + "/white_logo.png"
+          : window.location.origin + "/logo.png";
       if (document.documentElement.classList.contains("dark")) {
         document.getElementById("header-bg").classList.remove("bg-white");
       } else {
@@ -224,7 +210,6 @@ import { UI } from "astrowind:config";
   window.onpageshow = onPageShow;
 
   document.addEventListener("astro:after-swap", () => {
-    
     initTheme();
     onLoad();
     onPageShow();

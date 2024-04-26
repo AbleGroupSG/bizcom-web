@@ -141,119 +141,119 @@ declare module 'astro:content' {
   slug: "audit-services";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "bookkeeping-services.md": {
 	id: "bookkeeping-services.md";
   slug: "bookkeeping-services";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "business-acumen-association.md": {
 	id: "business-acumen-association.md";
   slug: "business-acumen-association";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "company-common-seal.md": {
 	id: "company-common-seal.md";
   slug: "company-common-seal";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "company-income-tax.md": {
 	id: "company-income-tax.md";
   slug: "company-income-tax";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "company-incorporation-malaysia.md": {
 	id: "company-incorporation-malaysia.md";
   slug: "company-incorporation-malaysia";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "company-incorporation-singapore.md": {
 	id: "company-incorporation-singapore.md";
   slug: "company-incorporation-singapore";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "compilation-services.md": {
 	id: "compilation-services.md";
   slug: "compilation-services";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "corporate-secretarial-services.md": {
 	id: "corporate-secretarial-services.md";
   slug: "corporate-secretarial-services";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "cost-efficiency.md": {
 	id: "cost-efficiency.md";
   slug: "cost-efficiency";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "goods-services-tax.md": {
 	id: "goods-services-tax.md";
   slug: "goods-services-tax";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "industry-expertise.md": {
 	id: "industry-expertise.md";
   slug: "industry-expertise";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "nominee-director-services.md": {
 	id: "nominee-director-services.md";
   slug: "nominee-director-services";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "payroll-services.md": {
 	id: "payroll-services.md";
   slug: "payroll-services";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "personal-income-tax.md": {
 	id: "personal-income-tax.md";
   slug: "personal-income-tax";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "professional-advice-practices.md": {
 	id: "professional-advice-practices.md";
   slug: "professional-advice-practices";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "strike-off-company.md": {
 	id: "strike-off-company.md";
   slug: "strike-off-company";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 };
 
@@ -265,5 +265,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../src/content/config.js");
 }

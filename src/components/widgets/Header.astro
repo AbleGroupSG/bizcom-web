@@ -10,6 +10,11 @@ import { getHomePermalink } from "~/utils/permalinks";
 import { trimSlash, getAsset } from "~/utils/permalinks";
 import type { CallToAction } from "~/types";
 
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 interface Link {
   text?: string;
   href?: string;
@@ -91,11 +96,11 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
               {links?.length ? (
                 <>
                   <a
-                    href={href}
+                    href={lang + "/" + href}
                     class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center"
                     data-i18n={text}
                   >
-                    {text}{" "}
+                    {t(text)}{" "}
                     <Icon
                       name="tabler:chevron-down"
                       class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline"
@@ -112,7 +117,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                           ]}
                           href={href2}
                         >
-                          {text2}
+                          {t(text2)}
                         </a>
                       </li>
                     ))}
@@ -124,9 +129,17 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                     "hover:text-link dark:hover:text-white px-4 py-3 flex items-centers",
                     { "aw-link-active": href === currentPath },
                   ]}
-                  href={href}
+                  href={
+                    text === "home"
+                      ? `/${lang}`
+                      : text === "testimonials" || text === "services"
+                        ? href
+                        : text === "blog"
+                          ? "/blog"
+                          : `/${lang}` + href
+                  }
                 >
-                  <span data-i18n={text}>{text}</span>
+                  <span data-i18n={text}>{t(text)}</span>
                 </a>
               )}
             </li>
@@ -168,7 +181,8 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                 <Button
                   {...btnProps}
                   data-i18n={btnProps.text}
-                  class="ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto"
+                  class="ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto btn btn-primary dark:bg-transparent"
+                  style="border: 0.1px solid #fff;"
                 />
               ))}
             </span>

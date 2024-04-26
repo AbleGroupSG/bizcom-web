@@ -11,6 +11,9 @@ import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification from '~/components/common/SiteVerification.astro';
 import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
+import { getLangFromUrl } from '~/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
 
 // Uncomment line below to activate View Transitions
 // import { ViewTransitions } from 'astro:transitions';
@@ -26,7 +29,7 @@ const { language, textDirection } = I18N;
 ---
 
 <!doctype html>
-<html lang={language} dir={textDirection} class="2xl:text-[20px]">
+<html lang={lang} dir={textDirection} class="2xl:text-[20px]">
   <head>
     <CommonMeta />
     <Favicons />

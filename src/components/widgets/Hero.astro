@@ -53,7 +53,7 @@ style="margin-bottom: 150px;"
         {
           tagline && (
             <p
-              class="text-base text-secondary font-bold tracking-wide uppercase"
+              class="text-base text-white text-secondary font-bold tracking-wide uppercase"
               set:html={tagline}
               data-i18n={tagline}
             />
@@ -71,7 +71,7 @@ style="margin-bottom: 150px;"
         <div class="max-w-3xl mx-auto">
           {
             subtitle && (
-              <div class="bg-dark p-2 mb-6" style="border-radius: 10px;">
+              <div class="bg-primary dark:bg-dark p-1 mb-6" style="border-radius: 12px;opacity:70%">
                 <p
                   class="text-xl text-white"
                   set:html={subtitle}
@@ -96,7 +96,7 @@ style="margin-bottom: 150px;"
             )
           }
         </div>
-        {content && <Fragment set:html={content} />}
+        {content && <p class="text-white">{content}</p>}
       </div>
       <div>
         {

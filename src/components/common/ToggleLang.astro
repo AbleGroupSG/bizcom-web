@@ -5,6 +5,10 @@ const {
     iconClass = "w-6 h-6",
     iconName = "tabler:sun",
 } = Astro.props;
+
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <select
@@ -13,9 +17,9 @@ const {
     class="rounded-t rounded-b text-sm text-black dark:text-white py-2 px-5 block"
     style="background-color: transparent; border: none; outline:none"
 >
-    <option value="en" style="background-color: transparent; color: black;">English</option>
-    <option value="id" style="background-color: transparent; color: black;">Indonesian</option>
-    <option value="zh" style="background-color: transparent; color: black;">中文</option>
+    <option selected={lang === 'en'} value="en" style="background-color: transparent; color: black;">English</option>
+    <option selected={lang === 'id'} value="id" style="background-color: transparent; color: black;">Indonesian</option>
+    <option selected={lang === 'zh'} value="zh" style="background-color: transparent; color: black;">中文</option>
 </select>
 
 <!-- <div class="">

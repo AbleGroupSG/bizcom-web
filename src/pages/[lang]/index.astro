@@ -1,0 +1,147 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import Hero from "~/components/widgets/Hero.astro";
+import Features from "~/components/widgets/Features.astro";
+import Testimonials from "~/components/widgets/Testimonials.astro";
+import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
+import ContactUs from "~/components/widgets/Contact.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const metadata = {
+  title: "BizCom Management Services",
+  ignoreTitleTemplate: true,
+};
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: "en", version: "v1" } },
+    { params: { lang: "id", version: "v1" } },
+    { params: { lang: "zh", version: "v1" } },
+  ];
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline={t("nav.home")}
+    title="BizCom Management Services"
+    )}
+    subtitle={t("bizcom.services.description")}
+    videoSrc="/bg2.mp4"
+    content={t("bizcom.services.description")}
+  />
+
+  <Features
+    id="about"
+    tagline={t("about.us")}
+    title={t("why.choose.bizcom")}
+    subtitle={t("bizcom.service.offering")}
+    items={[
+      {
+        title: t("business.acumen"),
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        icon: "tabler:components",
+      },
+      {
+        title: t("cost.efficiency"),
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        icon: "tabler:components",
+      },
+      {
+        title: t("industry.expertise"),
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        icon: "tabler:components",
+      },
+      {
+        title: t("professional.advice"),
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        icon: "tabler:components",
+      },
+    ]}
+  />
+
+  <BlogLatestPosts
+    id="services"
+    title={t("accounting.services.sg")}
+    information={t("bizcom.full.team.description")}
+  />
+
+  <Testimonials
+    id="testimonials"
+    title={t("our.testimonials")}
+    testimonials={[
+      {
+        testimonial: `Our financial reports and taxation since 2008 were prepared by BizCom, will continue to engage them in view of their professionalism and sincerity over the years.`,
+        name: "Ms Koh Mei Yen",
+        job: "Manager Poh Sien Pte Ltd",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 1",
+        },
+      },
+      {
+        testimonial: `BizCom has been providing accounting and tax services to our company for the past 10 years. They are professional, reliable and efficient. We are very satisfied with their services.`,
+        name: "Mr. Tan",
+        job: "Director of a Trading Company",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 2",
+        },
+      },
+      {
+        testimonial: `BizCom has been providing accounting and tax services to our company for the past 10 years. They are professional, reliable and efficient. We are very satisfied with their services.`,
+        name: "Mr. Tan",
+        job: "Director of a Trading Company",
+        image: {
+          src: "https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png",
+          alt: "Testimoni 3",
+        },
+      },
+    ]}
+    callToAction={{
+      target: "",
+      text: "read.more.testimonials",
+      href: lang+"/testimonials",
+      icon: "tabler:chevron-right",
+    }}
+  />
+
+  <ContactUs
+    id="contact-us"
+    title={t("drop.message")}
+    subtitle={t("faq.quick.answers")}
+    inputs={[
+      {
+        type: "text",
+        name: "name",
+        label: t("name"),
+      },
+      {
+        type: "email",
+        name: "email",
+        label: t("email"),
+      },
+      {
+        type: "phone",
+        name: "phone",
+        label: t("phone.number"),
+      },
+    ]}
+    textarea={{
+      label: t("message"),
+    }}
+    disclaimer={{
+      label: t("contact.form.notice"),
+    }}
+    description={t("support.response.time")}
+    
+  />
+</Layout>

@@ -1,11 +1,9 @@
-import { getPermalink, getBlogPermalink } from './utils/permalinks';
+import {getHomePermalink, getPermalink, getBlogPermalink } from './utils/permalinks';
 import services from './data/services.ts';
-
-
 
 export const headerData = {
   links: [
-    { text: 'home', href: getPermalink('/') },
+    { text: 'home', href: getHomePermalink() },
     { text: 'about', href: getPermalink('/about') },
     { text: 'services', href: '#services', links: services },
     { text: 'testimonials', href: '#testimonials' },
@@ -18,22 +16,19 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Our Services',
+      title: 'our.services',
       links: services,
     },
+  ],
+  blogLinks:[
     {
-      title: 'Recent Posts',
+      title: 'recent.posts',
       links: [
         { text: 'Annual General Meeting Singapore Requirement', href: getPermalink('/blog') },
         { text: 'Valuation for Duties and GST', href: getPermalink('/blog') },
         { text: 'Why incorporate your company in Singapore?', href: getPermalink('/blog') },
         { text: 'Singapore Goods and Services Tax (GST)', href: getPermalink('/blog') },
-        { text: 'Presentation of Profit or Loss and Other Comprehensive Income', href: getPermalink('/blog') }
-      ],
-    },
-    {
-      title: '_',
-      links: [
+        { text: 'Presentation of Profit or Loss and Other Comprehensive Income', href: getPermalink('/blog') },
         { text: 'Singapore Accounting Standards', href: getPermalink('/blog') },
         { text: 'Singapore Company Secretary Duties', href: getPermalink('/blog') },
         { text: 'Consequences of Filing Taxes or Not Filing', href: getPermalink('/blog') },

@@ -6,6 +6,15 @@ import ContactUs from '~/components/widgets/Contact.astro';
 const metadata = {
   title: 'Contact',
 };
+export function getStaticPaths () {
+ return [
+    {params: {lang: 'en', version: 'v1'}},
+    {params: {lang: 'id', version: 'v1'}},
+    {params: {lang: 'zh', version: 'v1'}},
+  ];
+}
+
+const { lang, version } = Astro.params;
 ---
 
 <Layout metadata={metadata}>
