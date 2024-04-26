@@ -1,6 +1,6 @@
 site:
   name: BizCom Management Services PTE. LTD.
-  site: 'https://BizCom.vercel.app'
+  site: 'https://bizcom-web-profile.vercel.app'
   base: '/'
   trailingSlash: false
 
