@@ -27,6 +27,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
+  site: 'https://bizcom-web-profile.vercel.app',
   integrations: [
     react(),
     tailwind({
